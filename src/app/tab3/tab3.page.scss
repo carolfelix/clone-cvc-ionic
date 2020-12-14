@@ -1,1 +1,69 @@
+.textoAbsoluto{
+    position: absolute;
+    top: 167px;
+    right: 129px;
+    font-size: 18px;
+    color: white;
+}
+.textoAbsoluto2{
+    position: absolute;
+    top: 110px;
+    left: 125px;
+    font-size: 30px;
+    color: white;
+    padding-bottom: 3px;
+}
+.jss85 {
+    position: relative;
+}
+.jss85:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.capa{
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.jss85:hover{
+    opacity:1;
+}
+.paris{
+    left: 142px;
+}
+.sp{
+    left: 110px;
+}
+.tituloDestino{
+    text-align: center;
+    font-weight: 600;
+    padding-top: 20px;
+    font-size: 24px;
+}
 
+.bordaGuia{
+    border-bottom: 2px solid #263c70;
+    width: 18%;
+    margin-left: 158px;
+    padding-top: 10px;
+    margin-bottom: 12px;
+
+}
+
+.textoGuiaLinha{
+    margin-left: 37px;
+    margin-right: 37px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.textoGuia{
+    text-align: center;
+    font-size: 17px;
+    color: #9f9f9f;
+}

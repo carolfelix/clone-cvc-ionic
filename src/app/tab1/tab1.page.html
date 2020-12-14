@@ -1,41 +1,433 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab One
-    </ion-title>
+<ion-header class="headerPrincipal">
+  <ion-toolbar color="" class="toolbarTopo">
+      <ion-grid>
+          <ion-row>
+            <ion-icon name="menu" (click)="openMenu()" class="iconMenu"></ion-icon>
+              <ion-title class="logoHeader logoHeaderCentralizada">
+                  CVC
+          </ion-title>
+          <ion-icon name="cart"  class="iconMenu"></ion-icon>
+          </ion-row>
+      </ion-grid>
   </ion-toolbar>
 </ion-header>
-
-<ion-content>
-    <ion-card class="welcome-card">
-      <img src="/assets/shapes.svg" alt="" />
-      <ion-card-header>
-        <ion-card-subtitle>Get Started</ion-card-subtitle>
-        <ion-card-title>Welcome to Ionic</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
-      </ion-card-content>
-    </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Resources</ion-label>
-      </ion-list-header>
-      <ion-item href="https://ionicframework.com/docs/">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Ionic Documentation</ion-label>
+<ion-menu side="start" menuId="first" contentId="main">
+  <ion-header>
+    <ion-toolbar color="tertiary" >
+      <ion-title class="corAzulBtn">CVC Viagens</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-icon name="airplane"  class="azul"></ion-icon>
+        <ion-button fill="clear" (click)="destinos()"><ion-text class="textoMenu">Destinos</ion-text></ion-button>
+        </ion-item>
+      <ion-item>
+        <ion-icon name="albums"  class="azul"></ion-icon>
+        <ion-button fill="clear" (click)="pacotes()">
+          <ion-text class="textoMenu">Pacotes</ion-text>
+        </ion-button>
       </ion-item>
-      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Scaffold Out Your App</ion-label>
+      <ion-item>
+        <ion-icon name="business"  class="azul"></ion-icon>
+        <ion-button fill="clear">
+          <ion-text class="textoMenu">Hotéis</ion-text>
+        </ion-button>
       </ion-item>
-      <ion-item href="https://ionicframework.com/docs/layout/structure">
-        <ion-icon slot="start" color="medium" name="grid"></ion-icon>
-        <ion-label>Change Your App Layout</ion-label>
+      <ion-item>
+        <ion-icon name="log-in"  class="azul"></ion-icon>
+        <ion-button fill="clear">
+          <ion-text class="textoMenu">Login</ion-text>
+        </ion-button>
       </ion-item>
-      <ion-item href="https://ionicframework.com/docs/theming/basics">
-        <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
-        <ion-label>Theme Your App</ion-label>
+      <ion-item>
+        <ion-icon name="call" class="azul"></ion-icon>
+        <ion-button fill="clear">
+          <ion-text class="textoMenu">Atendimento</ion-text>
+        </ion-button>
       </ion-item>
     </ion-list>
-</ion-content>
+  </ion-content>
+</ion-menu>
+<ion-router-outlet id="main"></ion-router-outlet>
+
+<ion-content color="">
+  <div>
+      <div>
+         <img src="../../assets/img/logocvc.png" class="imgLogo">
+         <div class="menuCvc">
+          <img src="../../assets/img/email.svg">
+          <img src="../../assets/img/fone.svg">
+          <img src="../../assets/img/tel.svg">
+          <img src="../../assets/img/people.svg"></div>
+      </div>
+  </div>
+
+  <ion-row>
+    <ion-col size="4">
+      <div class="divMenuCVC">
+        <img src="../../assets/img/planeRegular_od261k.svg"  class="imgMenuCVCPassagemPacoteHotel">
+        <ion-text class="textoMenuCVC">Passagens</ion-text>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="divMenuCVC">
+        <img src="../../assets/img/hotelDoubleBedRegular_cnzt9m.svg"  class="imgMenuCVCPassagemPacoteHotel">
+        <ion-text class="textoMenuCVC">Hotéis</ion-text>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <div class="divMenuCVC">
+        <img src="../../assets/img/baggageRegular_rdhcpp.svg"  class="imgMenuCVCPassagemPacoteHotel">
+        <ion-text class="textoMenuCVC">Pacotes</ion-text>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  
+
+  <!-- <ion-row>
+      <ion-col>
+        <ion-card  class="cardMenuPrincipalPacotes">
+          <div class="alinhamentoDoTextoMenu">
+            <ion-text class="textoMenu">
+              Os melhores Pacotes para a sua viagem!
+            </ion-text>
+          </div>         
+            <div>
+              <ion-row class="bordaMenuPacotes">
+                <div class="alinhamentoDoTextoMenu">
+                <ion-col size="6">
+                    <ion-text class="textoMenu textoPacotesBarra">Pacotes + CVC</ion-text>
+                </ion-col>
+              </div>
+              <div class="alinhamentoDoTextoMenu">
+                <ion-col size="6">
+                  <ion-text class="textoMenu textoPacotesBarra">Pacotes</ion-text>
+                </ion-col>
+              </div>
+              </ion-row>
+            </div>
+            <div  class="alinhamentoDoTextoMenu"> 
+              <ion-row>
+                <ion-col size="6">
+                  <ion-card>
+                    <ion-text>Origem</ion-text>
+                    <ion-input></ion-input>
+                  </ion-card>
+                </ion-col>
+                <ion-col size="6">
+                  <ion-card>
+                    <ion-text>Destino</ion-text>
+                    <ion-input></ion-input>
+                  </ion-card>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-card>
+                  <ion-text>Escolha as datas</ion-text>
+                </ion-card>
+              </ion-row>
+              <ion-row>
+                <ion-card>
+                  <ion-text>1 passageiro - Econômica</ion-text>
+                </ion-card>
+              </ion-row>
+            </div>
+            <div>
+              <ion-button fill="clear">
+                <ion-text>BUSCAR VOOS</ion-text>
+              </ion-button>
+            </div>
+        </ion-card>
+      </ion-col>
+  </ion-row> -->
+      <ion-col size="12">
+        <div class="cardPacotesPageI fundoAzul">
+        <ion-card-title class="tituloDoCard1">
+          <div>
+            <ion-text class="corBrancaTexto textoTitulo">Os melhores <ion-text class="corAmarelaTexto textoTitulo">pacotes</ion-text> para sua viagem!</ion-text>
+          </div>
+        </ion-card-title>
+        <ion-row class="">
+        <div class="espacoMenu">
+        <ion-col size="6" > 
+          <ion-button id="PacotesHotel" (click)="compare('PacotesHotel')" class="txtMenuHeader pacotesHotel" fill="clear"><ion-text class="corBrancaTexto">Pacotes + Hotel</ion-text> </ion-button>
+        </ion-col>
+        <ion-col size="6" >
+           <ion-button id="Pacotes" (click)="compare('Pacotes')"class="txtMenuHeader pacotesHotel" fill="clear"> <ion-text class="corBrancaTexto">Pacotes CVC </ion-text></ion-button> 
+        </ion-col>
+        <ion-row class="bordaMenuPacotes"></ion-row >
+      </div>
+      </ion-row>
+        <ion-row>
+          <ion-col size="4">
+          <div class="fundoAzulClaro OrigemDestino OrigemDestinoOrigem">
+            <div class="espacoOrigemPacotes"><ion-text> Origem </ion-text></div>
+            <ion-input  class="textoOrigemDestinoPacotes inputTodosPacotes"> <ion-text>De onde vai sair?</ion-text> </ion-input>
+          </div>
+          </ion-col> 
+            <ion-col size="4">
+              <div class="jss563">
+                <img src="https://static.cvc.com.br/pacotes-turisticos/_next/static/images/plane-modal-818e82089bad39e557f7d7a2519c58f6.svg" class="jss566" alt="Airplane">
+                </div>
+            </ion-col>
+          <ion-col size="4">
+            <div class="fundoAzulClaro OrigemDestino DestinoOrigemDestino">
+              <div class="espacoOrigemPacotes textoRight"><ion-text> Destino </ion-text></div>
+              <ion-text class="textoRight inputTodosPacotes textoOrigemDestinoPacotes textoRightMargin">Para aonde vai?</ion-text> 
+            </div>
+            </ion-col>   
+            </ion-row>
+        <ion-row> 
+         <ion-col size="12">
+          <ion-input  class="textoOrigemData inputData fundoAzulClaro corBrancaTexto" type="">
+            <ion-icon class="icon2 corBrancaTexto medidasIcons"name="calendar"></ion-icon> 
+            <ion-text>Selecione as datas</ion-text>
+          </ion-input>
+         </ion-col>
+      </ion-row>
+      <ion-row> 
+        <ion-col size="12">
+         <ion-input  class="textoOrigemData inputData fundoAzulClaro corBrancaTexto" type="">
+          <ion-icon  class="icon2 corBrancaTexto medidasIcons" name="people"></ion-icon>  
+          <ion-text>2 pessoas - 1 quarto</ion-text>    
+           </ion-input>
+        </ion-col>
+      </ion-row>
+            <ion-row>
+              <ion-col size="12">
+                <div class="centralizarButton">
+                  <ion-button fill=clear class="btnBuscar fundoAmarelo"> 
+                    <ion-text class="txtBtn corPreta">BUSCAR</ion-text> 
+                </ion-button>
+                </div>
+              </ion-col>
+            </ion-row>
+            <div class="divAzul">
+              <div class="divBranca"></div>
+            </div>
+          </div>
+        </ion-col>
+       
+        <ion-card class="cardGrande">
+
+    <div class="tituloHotel2">
+      <ion-title class="hotel">
+        Hotéis com preços imperdíveis!
+      </ion-title>
+    </div>
+    <ion-slides>
+      <ion-slide>
+        <ion-card class="cardHotel">
+          <img src="../../assets/img/belezaBeach.jfif"> 
+          <div class="tituloHotel">
+            <ion-text>Beleza Beach Hotel</ion-text>
+          </div>
+          <div class="tituloHotel tituloProximoEstrelas">
+            <ion-text>Natal</ion-text>
+          </div>
+          <div class="manterEsquerda">
+            <ion-icon class="iconsAmarelo" name="star"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star-outline"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star-outline"></ion-icon>
+          </div>
+          <div class="tituloHotel diarias">
+            <ion-text>diárias a partir de</ion-text>
+          </div>
+          <div class="manterEsquerda">
+            <ion-text class="moneyRS">R$</ion-text>
+            <ion-text class="moneyNum">81</ion-text>
+            <div class="manterDireita">
+              <ion-button class="verDetalhes" fill="clear">Mais Detalhes</ion-button>
+            </div>
+          </div>    
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card class="cardHotel">
+          <img src="../../assets/img/fenixPorto.jfif"> 
+          <div class="tituloHotel">
+            <ion-text>Hotel Fenix Porto Seguro</ion-text>
+          </div>
+          <div class="tituloHotel tituloProximoEstrelas">
+            <ion-text>Porto Seguro</ion-text>
+          </div>
+          <div class="manterEsquerda">
+            <ion-icon class="iconsAmarelo" name="star"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star-outline"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star-outline"></ion-icon>
+          </div>
+          <div class="tituloHotel diarias">
+            <ion-text>diárias a partir de</ion-text>
+          </div>
+          <div class="manterEsquerda">
+            <ion-text class="moneyRS">R$</ion-text>
+            <ion-text class="moneyNum">86</ion-text>
+            <div class="manterDireita">
+              <ion-button class="verDetalhes" fill="clear">Mais Detalhes</ion-button>
+            </div>
+          </div>    
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card class="cardHotel">
+          <img src="../../assets/img/flatAmsterdam.jfif"> 
+          <div class="tituloHotel">
+            <ion-text>Flat Amsterdam</ion-text>
+          </div>
+          <div class="tituloHotel tituloProximoEstrelas">
+            <ion-text>Florianópolis</ion-text>
+          </div>
+          <div class="manterEsquerda">
+            <ion-icon class="iconsAmarelo" name="star"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star-outline"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star-outline"></ion-icon>
+          </div>
+          <div class="tituloHotel diarias">
+            <ion-text>diárias a partir de</ion-text>
+          </div>
+          <div class="manterEsquerda">
+            <ion-text class="moneyRS">R$</ion-text>
+            <ion-text class="moneyNum">92</ion-text>
+            <div class="manterDireita">
+              <ion-button class="verDetalhes" fill="clear">Mais Detalhes</ion-button>
+            </div>
+          </div>    
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card class="cardHotel">
+          <img src="../../assets/img/cruz.jfif"> 
+          <div class="tituloHotel">
+            <ion-text>Hotel Cruz de Ouro</ion-text>
+          </div>
+          <div class="tituloHotel tituloProximoEstrelas">
+            <ion-text>Rio de Janeiro</ion-text>
+          </div>
+          <div class="manterEsquerda">
+            <ion-icon class="iconsAmarelo" name="star"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star-outline"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star-outline"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star-outline"></ion-icon>
+          </div>
+          <div class="tituloHotel diarias">
+            <ion-text>diárias a partir de</ion-text>
+          </div>
+          <div class="manterEsquerda">
+            <ion-text class="moneyRS">R$</ion-text>
+            <ion-text class="moneyNum">100</ion-text>
+            <div class="manterDireita">
+              <ion-button class="verDetalhes" fill="clear">Mais Detalhes</ion-button>
+            </div>
+          </div>    
+        </ion-card>
+      </ion-slide>
+      
+      <ion-slide>
+        <ion-card class="cardHotel">
+          <img src="../../assets/img/belezaBeach.jfif"> 
+          <div class="tituloHotel">
+            <ion-text>Hotel Luar de Itapuã</ion-text>
+          </div>
+          <div class="tituloHotel tituloProximoEstrelas">
+            <ion-text>Salvador</ion-text>
+          </div>
+          <div class="manterEsquerda">
+            <ion-icon class="iconsAmarelo" name="star"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star-outline"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star-outline"></ion-icon>
+          </div>
+          <div class="tituloHotel diarias">
+            <ion-text>diárias a partir de</ion-text>
+          </div>
+          <div class="manterEsquerda">
+            <ion-text class="moneyRS">R$</ion-text>
+            <ion-text class="moneyNum">108</ion-text>
+            <div class="manterDireita">
+              <ion-button class="verDetalhes" fill="clear">Mais Detalhes</ion-button>
+            </div>
+          </div>    
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card class="cardHotel">
+          <img src="../../assets/img/pousadajardins.jfif"> 
+          <div class="tituloHotel">
+            <ion-text>Pousada Jardins Premium</ion-text>
+          </div>
+          <div class="tituloHotel tituloProximoEstrelas">
+            <ion-text>Porto de Galinhas</ion-text>
+          </div>
+          <div class="manterEsquerda">
+            <ion-icon class="iconsAmarelo" name="star"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star-outline"></ion-icon>
+            <ion-icon class="iconsAmarelo"name="star-outline"></ion-icon>
+          </div>
+          <div class="tituloHotel diarias">
+            <ion-text>diárias a partir de</ion-text>
+          </div>
+          <div class="manterEsquerda">
+            <ion-text class="moneyRS">R$</ion-text>
+            <ion-text class="moneyNum">121</ion-text>
+            <div class="manterDireita">
+              <ion-button class="verDetalhes" fill="clear">Mais Detalhes</ion-button>
+            </div>
+          </div>    
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+</ion-card>
+
+<!-- <ion-card class="fundoMaragogi">
+<ion-row>
+  <ion-col>
+  </ion-col>
+</ion-row>
+</ion-card>
+</ion-content> -->
+<ion-row>
+  <ion-card class="cardComunicacao">
+    <div>
+      <img src="../../assets/img/tel.svg"  class="imgAmarela">
+      <div class="marginTextoComunicacao">
+        <ion-text class="textoComunicacao">Compre Pelo Telefone</ion-text>
+      </div>
+      <div class="marginTextoComunicacao"><ion-text class="textoComunicacao">Encontre a sua próxima viagem dos sonhos no televendas da CVC</ion-text>
+      </div>
+      <div class="marginTextoComunicacao"> 
+        <ion-text class="textoComunicacao">9635-5696</ion-text>
+      </div>
+    </div>
+  </ion-card>
+</ion-row>
+<ion-row>
+  <ion-card>
+    <div>
+      <img src="../../assets/img/tel.svg"  class="imgAmarela">
+      <div>
+        <ion-text>Compre Pelo Telefone</ion-text>
+      </div>
+      <div><ion-text>Encontre a sua próxima viagem dos sonhos no televendas da CVC</ion-text></div>
+      <div> 
+        <ion-text>9635-5696</ion-text>
+      </div>
+    </div>
+  </ion-card>
+</ion-row>

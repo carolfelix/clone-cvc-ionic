@@ -24,3 +24,625 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.bordaMenu {
+    font-weight: bold;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(90deg, rgba(120, 120, 120, 1) 0%, rgba(120, 120, 120, 1) 49%);
+    border-image-slice: 1;
+  }
+
+  .txtMenuHeader {
+    text-transform: none;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+  }
+  .cardHotel{
+    margin: 38px;
+    margin-top: 0;
+    border-radius: 22px;
+}
+
+.tituloHotel{
+    padding: 15px;
+    text-align: left;
+    color: black;
+    font-size: 20px;
+}
+
+.tituloProximoEstrelas{
+    padding-bottom: 6px;
+    padding-top: 4px;
+    font-size: 18px;
+}
+.iconsAmarelo{
+    text-align: left;
+    color: #f1cb1f;
+    font-size: 23px;
+}
+.manterEsquerda{
+    text-align: left;
+    padding-left: 15px;
+}
+
+.diarias{
+    font-size: 14px;
+}
+.moneyRS{
+    font-size: 22px;
+    color: black;
+}
+
+.moneyNum{
+    font-size: 41px;
+    color: black;
+    padding-left: 15px;
+}
+.verDetalhes{
+    font-size: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-left: 21px;
+    margin-right: 27px;
+    margin-bottom: 14px;
+    background: #f1cb1f;
+    border-radius: 7px;
+    text-align: right;
+    
+  }
+  .manterDireita{
+    text-align: right;
+    display: inline;
+    margin-left: 42px;
+  }
+  .tituloHotel2{
+      margin-bottom: 10px;
+      color: black;
+      text-align: center;
+  }
+
+  .hotel{
+    font-size: 23px;
+    padding-bottom: 20px;
+  }
+  .cardGrande{
+    margin: 0;
+    margin-top: 14px;
+    border-radius: 30px;
+  }
+
+  .blue{
+      background: #034C7B;
+  }
+  .topoFiltroECriticidade {
+    padding-top: 9px;
+    padding-left: 8px;
+    padding-bottom: 10px;
+    margin-top: 3%;
+    align-content: center;
+  }
+ 
+  .bordaPacotes{
+    border-bottom: 1px solid;
+    margin-left: 18px;
+    margin-right: 18px;
+    font-weight: 700;
+    color: white;
+  }
+  .espacoOrigemDestino{
+    color: black;
+    font-size: 16px;
+  }
+  .voosDireto{
+    margin-top: -20px;
+    margin-left: 25px;
+  }
+  .checkBox{
+    margin-left: 23px;
+    margin-top: 13px;
+    margin-bottom: 20px;
+  }
+  .espacoMenu{
+      margin-bottom: 12px;
+  }
+  .selecionarData{
+    font-size: 17px;
+    color: white;
+  }
+  .selecionarDataDestino{ 
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .textoOrigemDestino{
+    color: black;
+    font-size: 15px;
+    border: 1px solid white;
+    margin-top: 8px;
+    background: white;
+    margin-left: 19px;
+    border-radius: 5px;
+  }
+
+  .inputTodos{
+    width: 340px;
+  }
+  .cardOrigemDestino{
+    border: 1px solid;
+    border-radius: 9px;
+    margin-top: 10px;
+    padding-bottom: 4px;
+    background: #284c98
+  }
+  .toolbarTopo {
+    padding-bottom: 0px;
+  }
+  
+  .headerPrincipal {
+    background-color: #4D5467;
+   
+  }
+ 
+  .logoHeaderPrincipal {
+    font-size: 28px;
+    padding-top: 25%;
+  }
+  .icons{
+    padding-right: 2px;;
+  }
+  
+  .logoHeader {
+    text-align: center;
+    margin-left: 22px;
+    margin-right: 145px;
+    padding: 11px;
+    border: 1.7px solid;
+    border-radius: 65px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+  }
+  
+  .logoHeaderCentralizada {
+    margin-left: 74px;
+    margin-right: 74px;
+    margin-bottom: 6px;
+    font-size: 22px;
+  }
+ 
+  // CSS DOS CARDS ---------------------------------------------------------------- COM SUAS CORES //
+  .subTituloRight {
+    float: right;
+    border-radius: 62px;
+    background-color: white;
+    font-size: 22px;
+    padding-top: 5px;
+    color: black;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+  
+  p.subTitulo {
+    font-size: 19px;
+    font-weight: 600;
+  }
+  
+  
+  .img{
+    border: 1px;
+    border-radius: 5px;
+  }
+  
+  .cardsTela {
+    border: 0px solid;
+    border-radius: 15px;
+    border-bottom: 9px solid;
+    margin-right: 12px;
+    margin-top: -18px;
+    height: 80%;
+    border-bottom: -62px;
+  }
+  
+  
+  .cardCobranca {
+    border: 2px solid #30BF88;
+    border-radius: 15px;
+  }
+  
+  .conteudoDoCardVerde {
+    color: #30BF88;
+  }
+  
+  .corBranca{
+    color: white;
+  }
+  .corPreta{
+    color: black;
+  }
+  .fundoBranco{
+    background-color: white;
+  }
+ 
+  
+  .propriedadesFotos{
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .cardTamanhoTeste{
+    height: 246px;
+  }
+  
+  .marginJuntar{
+    margin-top: -38px;
+  }
+  .tituloDoCard1{
+    font-size: 22px;
+    color: black;
+    margin-bottom: 15px;
+    padding-top: 13px;
+    margin-left: 15px;
+  }
+  
+  .tituloDoCard2{
+    color: black;
+    font-size: 17px;
+    margin-bottom: 6px;
+    font-weight: 200;
+    margin-left: 16px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 23px;
+  }
+  .pacotesHotel{
+    font-size: 15px;
+    text-align: center;
+    margin-left: 14px;
+    padding-left: 8px;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .borderRadius50px{
+    border-radius: 50px;
+    border: 1px solid;
+
+  }
+  .fundoAzul{
+      background: #263c70;
+      border: #263c70;
+  }
+  .corAzulBtn{
+    color: black;
+  }
+  .azulColor{
+    color: #263c70;
+  }
+
+  .textoMenu{
+    padding: 10px;
+  }
+  .cardViagem{
+    height: 197px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+  }
+  .diariaImperdivel{
+    margin-top: 25px;
+    font-size: 22px;
+    margin-left: 10px;
+    font-weight: 600;
+  }
+  .diariaImperdivel2{
+    font-size: 15px;
+    margin-left: 10px;
+    color: black;
+    font-weight: 700;
+  }
+  
+  .amarelo{
+    color: #ffdc2c;
+    padding-top: 12px;
+  
+  }
+  .backgroundAmarelo{
+    background:#ffdc2c ;
+  }
+  
+  .cardPacotes{
+    height: 98%;
+    border-radius: 20px;
+    padding-top: 6px;
+    margin-right: 3px;
+    margin-left: 9px;
+    width: 95%;
+  }
+  .espacoCardConteudo{
+    padding-left: 10px;
+    padding-top: 0px;
+    font-size: 15px;
+  }
+  .icon{
+    width: 34px;
+    font-size: 28px;
+    color: white;
+  }
+  .textoHotel{
+    vertical-align: inherit;
+    display: inline-block;
+    top: 79px;
+    font-size: 17px;
+    color: black;
+    padding-left: 8px;
+  }
+  .diariasHotel{
+    margin-top: 25px;
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  .valorHotel{
+    margin-top: 5px;
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  .centralizarButton{
+    text-align: center;
+  }
+  .btnBuscar{
+    width: 88%;
+    padding-left: 92px;
+    padding-right: 92px;
+    background: f1cb1f;
+    background: #263c70;
+    padding-top: 9px;
+    padding-bottom: 12px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .txtBtn{
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+  }
+  .semJurosHotel{
+    margin-top: 5px;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .icon2{
+    width: 25px;
+    font-size: 23px;
+    padding-left: 11px;
+  }
+  .azul{
+      color: #263c70;
+
+  }
+  .tituloDoCard {
+    font-size: 20px;
+    margin: 10px;
+    color: black;
+    margin-bottom: 6px;
+    font-weight: 200;
+    margin-left: 10px;
+    font-weight: 600;
+  
+  }
+  
+  .viagensPacotes{
+    margin-top: 20px;
+    margin-left: 12px;
+  }
+
+  .viagensDestino{
+    margin-top: 0px;
+    margin-left: 18px;
+    width: 91%;
+    border-radius: 12px;
+    height: 97%;
+}
+  .pacotesMaisHotel{
+    padding-top: 4px;
+    padding-left: 6px;
+    padding-bottom: 4px;
+    margin-top: 10px;
+    margin-right: 26px;
+    font-size: 11px;
+    margin-bottom: 7px;
+    font-weight: 800;
+}
+.inputData2{
+  width: 170px;
+  margin-left: 1px;
+}
+
+.tituloPacote{
+  padding-left: 6px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.iconPacotes{
+  width: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.txtIconPacotes{
+  font-size: 16px;
+}
+
+.apartirDe{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.valorPacotes{
+  padding-left: 8px;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.taxasAIncluir{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 9px;
+  font-weight: 800;
+}
+.verDetalhes{
+  font-size: 12px;
+  border: 1px solid;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-left: 21px;
+  margin-right: 27px;
+  margin-bottom: 14px;
+  color: white;
+  background: #263c70;
+  font-weight: 700;
+  border-radius: 7px;
+  text-align: center;
+}
+
+  
+  // CSS DA TAB3 FORMULÁRIO ---------------------------------------------------------------- COM SUAS CORES //
+  .informacoesMenuForm {
+    padding-top: 6%;
+    font-weight: bold;
+    padding-bottom: 5%;
+    font-size: 21px;
+    padding-left: 4%;
+  }
+  
+  .formulario {
+    margin-left: 34px;
+    margin-right: 34px;
+    border: 1px solid #C6C6C6;
+    background: white;
+    border-radius: 9px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+  }
+  
+  .itensForm {
+    border: solid 1px #707070;
+    margin-top: 15px;
+    margin-bottom: 16px;
+    margin-left: 23px;
+    margin-right: 23px;
+    height: 35px;
+    border-radius: 9px;
+  }
+  
+  .inputForm {
+    padding-bottom: 14px;
+    color: #707070;
+  }
+  
+  .nomeItem {
+    color: #555B69;
+    margin-left: 28px;
+  }
+  
+  
+  .itemDescricao {
+    height: 135px;
+  }
+  
+  .espacoItens {
+    margin-top: 18px;
+  }
+  
+  .textAreaForm {
+    width: 266px;
+    height: 105px;
+  }
+  
+  .btnSalvar {
+    background: transparent;
+    color: #4D5467;
+    border: solid 2px #4D5467;
+    border-radius: 52px;
+    width: 35%;
+    font-weight: 600;
+  }
+  
+  .espacoBtnSalvar {
+    text-align: center;
+  }
+  
+  .textBtnSalvar {
+    color: #4D5467;
+    padding-right: 13px;
+    text-transform: none;
+    padding-right: 11px;
+  }
+  
+  .iconeBtnSalvar {
+    color: #4D5467;
+    font-size: 20px;
+    padding-left: 5px;
+  }
+  
+  // DROPDOWN ------------------------------------------------------------ //
+  .navBar {
+    border: 2px solid;
+    color: #4d5467;
+    margin-top: -16px;
+    margin-left: 43px;
+    width: 75%;
+    overflow: hidden;
+    font-family: Arial;
+    background: transparent;
+    border-radius: 33px;
+  }
+  .iconMenu{
+    font-size:35px;
+    padding-top: 15px;
+    padding-left: 4px;
+    padding-right: 8px;
+  }
+.fundoAmarelo{
+  background: #ffdc2c;
+
+}
+.imgLogo{
+  width: 18%;
+  padding-top: 20px;
+  margin-left: 27px;
+}
+
+.textoMenuCVC{
+  font-size: 17px;
+}
+
+.divMenuCVC{
+  padding-left: 8px;
+  text-align: center;
+}
+
+.imgMenuCVCPassagemPacoteHotel{
+    width: 25%;
+    margin-right: 5px;
+    margin-bottom: -7px;
+}
+
+.menuCvc{
+  vertical-align: inherit; 
+    order: 1;
+    text-align: right;
+    font-weight: 500 !important;
+    list-style-type: none;
+    margin-right: 13px;
+    margin-top: -51px;
+    margin-bottom: 26px;
+}
+
+
+
+  
+ 
